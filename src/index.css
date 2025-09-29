@@ -175,7 +175,7 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  min-height: 300px; 
+  min-height: 300px;
 }
 
 .review-card:hover {
@@ -190,7 +190,7 @@ body {
   position: relative;
   flex: 1;
   display: flex;
-  align-items: flex-start; 
+  align-items: flex-start;
 }
 
 .review-text::before {
@@ -207,10 +207,10 @@ body {
 .review-author {
   display: flex;
   align-items: center;
-  margin-top: auto; 
+  margin-top: auto;
   padding-top: 1rem;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
-  min-height: 70px; 
+  min-height: 70px;
 }
 
 .author-avatar {
@@ -224,12 +224,12 @@ body {
   color: white;
   font-weight: 600;
   margin-right: 1rem;
-  flex-shrink: 0; 
+  flex-shrink: 0;
 }
 
 .author-info {
-  flex: 1; 
-  min-width: 0; 
+  flex: 1;
+  min-width: 0;
 }
 
 .author-name {
@@ -250,25 +250,6 @@ body {
   text-overflow: ellipsis;
 }
 
-/* Responsive Design for Reviews */
-@media (max-width: 768px) {
-  .review-card {
-    min-height: auto;
-    margin-bottom: 2rem;
-  }
-  
-  .review-author {
-    min-height: 60px;
-  }
-  
-  .author-name,
-  .author-position {
-    white-space: normal;
-    overflow: visible;
-    text-overflow: clip;
-  }
-}
-
 /* Pricing Section */
 .pricing-section {
   padding: 100px 0;
@@ -287,7 +268,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  min-height: 600px; 
+  min-height: 600px;
 }
 
 .pricing-card:hover {
@@ -318,7 +299,7 @@ body {
 
 .pricing-header {
   margin-bottom: 2rem;
-  flex-shrink: 0; 
+  flex-shrink: 0;
 }
 
 .pricing-title {
@@ -346,11 +327,11 @@ body {
   list-style: none;
   padding: 0;
   margin: 2rem 0;
-  flex: 1; 
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 200px; 
+  min-height: 200px;
 }
 
 .pricing-features li {
@@ -360,7 +341,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 50px; 
+  min-height: 50px;
 }
 
 .pricing-features li:last-child {
@@ -383,8 +364,8 @@ body {
 }
 
 .pricing-footer {
-  flex-shrink: 0; 
-  margin-top: auto; 
+  flex-shrink: 0;
+  margin-top: auto;
 }
 
 .btn-pricing {
@@ -485,7 +466,7 @@ body {
 }
 
 .about-visual-column {
-  padding-top: 1rem; 
+  padding-top: 1rem;
 }
 
 .feature-list .feature-item {
@@ -525,7 +506,7 @@ body {
 
 .about-visual {
   position: relative;
-  height: 300px; 
+  height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -542,15 +523,15 @@ body {
 .floating-card {
   position: absolute;
   background: white;
-  padding: 1.5rem 1rem; 
+  padding: 1.5rem 1rem;
   border-radius: 12px;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
   display: flex;
   align-items: center;
   animation: float 3s ease-in-out infinite;
   border: 1px solid rgba(0, 0, 0, 0.05);
-  min-width: 180px; 
-  gap: 0.75rem; 
+  min-width: 180px;
+  gap: 0.75rem;
 }
 
 .floating-card i {
@@ -560,7 +541,7 @@ body {
 
 .floating-card span {
   font-weight: 500;
-  white-space: nowrap; 
+  white-space: nowrap;
 }
 
 .card-1 {
@@ -586,13 +567,13 @@ body {
 }
 
 @keyframes float {
-  0%, 100% { 
+  0%, 100% {
     transform: translateY(0) rotate(0deg);
   }
-  33% { 
+  33% {
     transform: translateY(-10px) rotate(1deg);
   }
-  66% { 
+  66% {
     transform: translateY(-5px) rotate(-1deg);
   }
 }
@@ -603,7 +584,7 @@ body {
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
 }
 
-[data-aos="fade-right"], 
+[data-aos="fade-right"],
 [data-aos="fade-left"] {
   opacity: 0;
   transition-property: transform, opacity;
@@ -623,85 +604,12 @@ body {
   transform: translateX(0);
 }
 
-@media (max-width: 992px) {
-  .about-visual {
-    height: 300px;
-    margin-top: 2rem;
-  }
-  
-  .floating-card {
-    min-width: 160px;
-    padding: 1rem 0.75rem;
-  }
-  
-  .card-1 {
-    top: 5%;
-    left: 2%;
-  }
-  
-  .card-2 {
-    top: 50%;
-    right: 5%;
-  }
-  
-  .card-3 {
-    bottom: 10%;
-    left: 15%;
-  }
-}
-
-@media (max-width: 768px) {
-  .stats-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    margin-bottom: 2rem;
-  }
-  
-  .about-visual {
-    height: 250px;
-  }
-  
-  .floating-cards-container {
-    max-width: 100%;
-  }
-  
-  .floating-card {
-    position: relative;
-    margin-bottom: 1rem;
-    animation: none;
-    min-width: auto;
-    width: 100%;
-    max-width: 200px;
-    margin: 0 auto 1rem;
-  }
-  
-  .card-1, .card-2, .card-3 {
-    position: relative;
-    top: auto;
-    left: auto;
-    right: auto;
-    bottom: auto;
-    transform: none;
-  }
-}
-
 .about-section .container {
   position: relative;
 }
 
 .about-section .row {
   min-height: 500px;
-}
-
-@media (min-width: 992px) {
-  .about-content {
-    padding-right: 2rem;
-  }
-  
-  .about-visual-column {
-    padding-left: 2rem;
-    border-left: 1px solid #f0f0f0;
-  }
 }
 
 /* How It Works Section */
@@ -912,7 +820,7 @@ body {
 .embed-responsive::before {
   display: block;
   content: "";
-  padding-top: 56.25%; 
+  padding-top: 56.25%;
 }
 
 .embed-responsive-item {
@@ -978,44 +886,6 @@ video {
   border-top: 4px solid var(--primary);
   border-radius: 50%;
   animation: spin 1s linear infinite;
-}
-
-/* Responsive video styles */
-@media (max-width: 768px) {
-  .video-placeholder {
-    height: 300px;
-    padding: 1.5rem;
-  }
-  
-  .play-button {
-    width: 60px;
-    height: 60px;
-  }
-  
-  .play-button i {
-    font-size: 1.5rem;
-  }
-  
-  .video-placeholder h4 {
-    font-size: 1.25rem;
-  }
-  
-  .video-placeholder p {
-    font-size: 1rem;
-  }
-  
-  .video-features {
-    gap: 1rem;
-  }
-  
-  .video-features span {
-    padding: 0.4rem 0.8rem;
-    font-size: 0.9rem;
-  }
-  
-  .video-modal .modal-dialog {
-    margin: 1rem;
-  }
 }
 
 /* Animation for video play button */
@@ -1164,34 +1034,6 @@ video {
   font-weight: 500;
 }
 
-/* Responsive Updates */
-@media (max-width: 768px) {
-  .stats-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-  
-  .cta-features {
-    flex-direction: column;
-    gap: 1rem;
-  }
-  
-  .cta-buttons .btn {
-    width: 100%;
-    margin-bottom: 1rem;
-  }
-  
-  .floating-card {
-    position: relative;
-    margin-bottom: 1rem;
-    animation: none;
-  }
-  
-  .about-visual {
-    height: auto;
-  }
-}
-
 /* Footer */
 .footer {
   background: var(--dark);
@@ -1277,39 +1119,6 @@ video {
   animation: fadeInUp 0.8s ease;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .hero-title {
-    font-size: 2.5rem;
-  }
-  
-  .section-title {
-    font-size: 2rem;
-  }
-  
-  .pricing-card {
-    min-height: auto;
-    margin-bottom: 2rem;
-  }
-  
-  .pricing-card.popular {
-    transform: none;
-    margin: 1rem 0;
-  }
-  
-  .feature-card, .review-card {
-    margin-bottom: 2rem;
-  }
-  
-  .billing-toggle {
-    padding: 0.75rem 1rem;
-  }
-  
-  .billing-toggle span {
-    font-size: 0.9rem !important;
-  }
-}
-
 /* Loading Animation */
 .loading-spinner {
   display: inline-block;
@@ -1323,4 +1132,323 @@ video {
 
 @keyframes spin {
   to { transform: rotate(360deg); }
+}
+
+/* ========================================================= */
+/* Small Screen Responsive Styles (max-width: 992px) - Tablet and Smaller */
+/* ========================================================= */
+
+@media (max-width: 992px) {
+  /* Global Adjustments */
+  .hero-section,
+  .features-section,
+  .reviews-section,
+  .pricing-section,
+  .about-section,
+  .how-it-works-section,
+  .integrations-section,
+  .faq-section,
+  .cta-section {
+    padding: 80px 0; /* Reduced vertical padding for sections */
+  }
+  
+  .section-title {
+    font-size: 2rem; /* Smaller section title */
+    margin-bottom: 2rem;
+  }
+  
+  .section-subtitle {
+    margin-bottom: 2rem;
+  }
+  
+  /* Navbar Adjustments */
+  .custom-navbar:not(.navbar-scrolled) .navbar-brand {
+    color: var(--primary) !important; /* Make brand visible before scroll on mobile */
+  }
+
+  /* Hero Section */
+  .hero-section {
+    min-height: 80vh;
+  }
+
+  .hero-title {
+    font-size: 2.8rem; /* Smaller hero title */
+    text-align: center;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
+  }   .hero-visual {
+    height: 300px; /* Reduced visual height */
+  }
+
+  /* Cards - General */
+  .feature-card, 
+  .review-card, 
+  .pricing-card {
+    margin-bottom: 2rem; /* Add spacing between stacked cards */
+  }
+  
+  .feature-card {
+    padding: 2rem;
+  }
+  
+  /* Review Cards */
+  .review-card {
+    min-height: auto; /* Allow height to adjust content */
+  }   .author-name,
+  .author-position {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+  }
+  
+  /* Pricing Cards */
+  .pricing-card {
+    min-height: auto; /* Allow height to adjust content */
+  }
+  
+  .pricing-card.popular {
+    transform: none; /* Remove subtle uplift */
+    margin: 1rem 0; /* Add spacing if stacked vertically */
+  }
+  
+  .pricing-features {
+      min-height: auto;
+  }   /* About Section */
+  .about-visual {
+    height: 300px;
+    margin-top: 2rem;
+  }
+  
+  .floating-card {
+    min-width: 160px;
+    padding: 1rem 0.75rem;
+  }
+  
+  .card-1 {
+    top: 5%;
+    left: 2%;
+  }
+  
+  .card-2 {
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+  } .card-3 {
+    bottom: 10%;
+    left: 15%;
+  }
+  
+  .about-section .row {
+    min-height: auto; /* Allow height to adjust for stacked content */
+  }
+  
+  .about-content {
+      padding-right: 0;
+  }
+  
+  .about-visual-column {
+      padding-left: 0;
+      border-left: none;
+  }
+
+  /* How It Works Section */
+  .video-placeholder {
+    height: 350px;
+    margin-top: 2rem;
+  }
+}
+/* ========================================================= */
+/* Very Small Screen Responsive Styles (max-width: 768px) - Mobile */
+/* ========================================================= */
+@media (max-width: 768px) {
+  /* Global Adjustments */
+  .hero-section,
+  .features-section,
+  .reviews-section,
+  .pricing-section,
+  .about-section,
+  .how-it-works-section,
+  .integrations-section,
+  .faq-section,
+  .cta-section {
+    padding: 60px 0; /* Further reduced vertical padding */
+  }   .hero-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .btn-hero {
+    width: 100%; /* Full width button */
+    padding: 10px 20px;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Hero Visual */
+  .hero-visual > div {
+    height: 300px !important;
+  }   /* Features and Reviews */
+  .feature-card, .review-card {
+    margin-bottom: 1.5rem;
+  }
+
+  .feature-card {
+    padding: 1.5rem;
+  }
+
+  .feature-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .feature-title {
+    font-size: 1.25rem;
+  }
+  
+  /* Pricing */
+  .pricing-card {
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    }   .pricing-price {
+    font-size: 2.5rem;
+  }
+  
+  .billing-toggle {
+    padding: 0.5rem 1rem;
+  }
+
+  /* About Section */
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .stat-number {
+      font-size: 2rem;
+  }
+
+  .about-visual {
+    height: auto; /* Auto height as cards are stacked */
+  }
+
+  .floating-cards-container {
+    max-width: 100%;
+  }   .floating-card {
+    position: relative;
+    margin-bottom: 1rem;
+    animation: none; /* Disable floating animation on mobile */
+    min-width: auto;
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto 1rem;
+  }
+
+  .card-1, .card-2, .card-3 {
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    transform: none;
+  }
+  
+  .floating-card i {
+      font-size: 1.25rem;
+    }   .floating-card span {
+      font-size: 0.9rem;
+  }
+
+  /* How It Works */
+  .step-item {
+      margin-bottom: 1.5rem;
+  }
+  
+  .video-placeholder {
+    height: 250px;
+    padding: 1.5rem;
+  }
+  
+  .play-button {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 1rem;
+  }
+  
+  .play-button i {
+    font-size: 1.25rem;
+    margin-left: 3px;
+  }   .video-placeholder h4 {
+    font-size: 1.1rem;
+  }
+  
+  .video-placeholder p {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .video-features {
+    gap: 0.75rem;
+    font-size: 0.8rem;
+  }
+  
+  .video-features span {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.8rem;
+  }
+
+  /* CTA Section */
+  .cta-title {
+    font-size: 2rem;
+  }   .cta-subtitle {
+    font-size: 1rem;
+  }
+
+  .cta-buttons .btn {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .cta-features {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .feature-tag {
+      font-size: 0.9rem;
+      justify-content: center;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 40px 0 20px;
+    text-align: center;
+  }   .footer .col-md-3 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .social-links {
+      justify-content: center;
+  }
 }
