@@ -1187,7 +1187,9 @@ video {
     align-items: center;
     text-align: center;
     margin-bottom: 2rem;
-  }   .hero-visual {
+  }
+
+  .hero-visual {
     height: 300px; /* Reduced visual height */
   }
 
@@ -1205,7 +1207,9 @@ video {
   /* Review Cards */
   .review-card {
     min-height: auto; /* Allow height to adjust content */
-  }   .author-name,
+  }
+  
+  .author-name,
   .author-position {
     white-space: normal;
     overflow: visible;
@@ -1224,7 +1228,9 @@ video {
   
   .pricing-features {
       min-height: auto;
-  }   /* About Section */
+  }
+  
+  /* About Section */
   .about-visual {
     height: 300px;
     margin-top: 2rem;
@@ -1244,7 +1250,9 @@ video {
     top: 50%;
     right: 5%;
     transform: translateY(-50%);
-  } .card-3 {
+  }
+  
+  .card-3 {
     bottom: 10%;
     left: 15%;
   }
@@ -1268,6 +1276,7 @@ video {
     margin-top: 2rem;
   }
 }
+
 /* ========================================================= */
 /* Very Small Screen Responsive Styles (max-width: 768px) - Mobile */
 /* ========================================================= */
@@ -1283,7 +1292,9 @@ video {
   .faq-section,
   .cta-section {
     padding: 60px 0; /* Further reduced vertical padding */
-  }   .hero-title {
+  }
+
+  .hero-title {
     font-size: 2rem;
     margin-bottom: 1rem;
   }
@@ -1306,7 +1317,9 @@ video {
   /* Hero Visual */
   .hero-visual > div {
     height: 300px !important;
-  }   /* Features and Reviews */
+  }
+
+  /* Features and Reviews */
   .feature-card, .review-card {
     margin-bottom: 1.5rem;
   }
@@ -1330,7 +1343,9 @@ video {
   .pricing-card {
     padding: 1.5rem;
     margin-bottom: 1.5rem;
-    }   .pricing-price {
+  }
+  
+  .pricing-price {
     font-size: 2.5rem;
   }
   
@@ -1355,7 +1370,9 @@ video {
 
   .floating-cards-container {
     max-width: 100%;
-  }   .floating-card {
+  }
+
+  .floating-card {
     position: relative;
     margin-bottom: 1rem;
     animation: none; /* Disable floating animation on mobile */
@@ -1376,7 +1393,9 @@ video {
   
   .floating-card i {
       font-size: 1.25rem;
-    }   .floating-card span {
+  }
+  
+  .floating-card span {
       font-size: 0.9rem;
   }
 
@@ -1399,7 +1418,9 @@ video {
   .play-button i {
     font-size: 1.25rem;
     margin-left: 3px;
-  }   .video-placeholder h4 {
+  }
+  
+  .video-placeholder h4 {
     font-size: 1.1rem;
   }
   
@@ -1421,7 +1442,9 @@ video {
   /* CTA Section */
   .cta-title {
     font-size: 2rem;
-  }   .cta-subtitle {
+  }
+
+  .cta-subtitle {
     font-size: 1rem;
   }
 
@@ -1444,7 +1467,9 @@ video {
   .footer {
     padding: 40px 0 20px;
     text-align: center;
-  }   .footer .col-md-3 {
+  }
+
+  .footer .col-md-3 {
     margin-bottom: 1.5rem;
   }
   
